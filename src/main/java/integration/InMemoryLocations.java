@@ -40,7 +40,7 @@ public class InMemoryLocations implements Locations {
         map.put(new Query("us", "12345"), new ZipInfo("12345", "United States", "US", singletonList(schenectady)));
         map.put(new Query("at", "4843"), new ZipInfo("4843", "Austria", "AT", singletonList(ampflwang)));
         map.put(new Query("it", "38089"), new ZipInfo("38089", "Italy", "IT", asList(darzo, storo, lodrone)));
-
+        map.put(new Query("it", "34100"), new ZipInfo("34100", "Italy", "IT", singletonList(trieste)));
         
         
         
