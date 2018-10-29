@@ -21,7 +21,7 @@ public class ZipInfoUAT {
         given().
                 spec(requestSpec).
                 when().
-                get("/zip/us/90210").
+                get("/zip/us/90211").
                 then().
                 assertThat().
                 body("places.'place name'", hasItem("Beverly Hills"));
