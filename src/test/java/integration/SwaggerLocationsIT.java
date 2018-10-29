@@ -13,7 +13,7 @@ public class SwaggerLocationsIT {
     public void it_retrieves_data_from_remote_api() {
         SwaggerLocations locations = new SwaggerLocations();
 
-        ZipInfo zipInfo = locations.findBy(new Query("us", "90210"));
+        ZipInfo zipInfo = locations.findBy(new Query("us", "90211"));
 
         assertThat(zipInfo.country, is("US"));
     }
