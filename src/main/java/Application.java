@@ -25,7 +25,8 @@ public class Application {
         repository.setup();
         environment.routingEngine()
                 .registerAutoRoute(Route.sync("GET", "/zip/<country>/<code>", Application::zipInfo))
-                .registerAutoRoute(Route.sync("GET", "/ping", rc -> "pong"));
+                .registerAutoRoute(Route.sync("GET", "/ping", rc -> "pong"))
+                .registerAutoRoute(Route.sync("GET", "/pong", rc -> "ping"));
     }
 
     private static Response zipInfo(RequestContext context) {
