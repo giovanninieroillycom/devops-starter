@@ -32,11 +32,17 @@ public class InMemoryLocations implements Locations {
         Place darzo = new Place("Darzo", "Trentino-Alto Adige", "04");
         Place storo = new Place("Storo", "Trentino-Alto Adige", "04");
         Place lodrone = new Place("Storo", "Trentino-Alto Adige", "04");
+        Place trieste = new Place("Trieste", "Friuli Venezia Giulia", "FVG");
 
+        
         map.put(new Query("nl", "3825"), new ZipInfo("3825", "Netherlands", "NL", singletonList(vathorst)));
         map.put(new Query("us", "90210"), new ZipInfo("90210", "United States", "US", singletonList(beverlyHills)));
         map.put(new Query("us", "12345"), new ZipInfo("12345", "United States", "US", singletonList(schenectady)));
         map.put(new Query("at", "4843"), new ZipInfo("4843", "Austria", "AT", singletonList(ampflwang)));
         map.put(new Query("it", "38089"), new ZipInfo("38089", "Italy", "IT", asList(darzo, storo, lodrone)));
+
+        
+        
+        
     }
 }
