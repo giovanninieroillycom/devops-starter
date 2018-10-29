@@ -32,7 +32,7 @@ public class ZipInfoUAT {
     }
 
     public Integer port() {
-        String port = System.getProperty("port", "8080");
+        String port = System.getProperty("port", "8090");
         return Integer.valueOf(port);
     }
 }
